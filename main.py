@@ -47,6 +47,8 @@ def main():
         calculator(mode, csv_file)
     except Exception as e:
         print(e)
+    finally:
+        csv_file.close()
 
 
 # function to call the different calculators depending on user requirements
@@ -102,6 +104,8 @@ def csv_to_share_bundles(trade_data):
                                                                       price=shares_dict[share][i].unit_price *
                                                                             shares_dict[share][i].quantity,
                                                                       date=shares_dict[share][i].date))
+    f.close()
+    f2.close()
     return shares_dict
 
 
