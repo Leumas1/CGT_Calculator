@@ -1,5 +1,5 @@
 # CGT_Calculator - Version 1.0
-USE AT OWN RISK
+DON'T FULLY RELY ON FOR TAX
 
 This program is designed to import a .csv file of asset transactions. Once imported it will calculate and return the applicable CGT tax. 
 The first version of the program only supports Australian shares.
